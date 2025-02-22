@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 import math
 from transformers import GPTNeoForCausalLM, AutoTokenizer
-from datasets import load_dataset
+from datasets import load_dataset #if this doesn't load try pip install datasets
 
 # Set pad token as eos token to handle padding correctly
 tokenizer.pad_token = tokenizer.eos_token
@@ -22,7 +22,7 @@ dataset = load_dataset("openwebtext", split="train")
 data = [sample["text"] for sample in dataset.select(range(100))]
 
 # Function to calculate perplexity (a measure of text generation quality)
-def calculate_perplexity(model, data, max_seq_length=128):
+def calculate_perplexity(model, data, max_seq_length=64):
     model.eval()  # Set model to evaluation mode
     total_loss = 0
     
