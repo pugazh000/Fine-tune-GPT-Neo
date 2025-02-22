@@ -7,23 +7,6 @@ This project demonstrates how to fine-tune the GPT-Neo 1.3B model to improve its
 
 This repository demonstrates how to fine-tune the **GPT-Neo 1.3B** model using a small sample from the **OpenWebText** dataset to enhance text generation capabilities. The project is optimized for an **NVIDIA RTX 3050 GPU** and runs in **Google Colab**, making it highly efficient and easy to deploy.
 
-## Table of Contents 📑
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Dataset](#dataset)
-- [How It Works](#how-it-works)
-  - [Loading the Model](#loading-the-model)
-  - [Fine-Tuning the Model](#fine-tuning-the-model)
-  - [Calculating Perplexity](#calculating-perplexity)
-  - [Training Loop](#training-loop)
-- [Code Example](#code-example)
-- [Output Example](#output-example)
-- [Optimizing for RTX 3050](#optimizing-for-rtx-3050)
-- [Running in Google Colab](#running-in-google-colab)
-- [Results](#results)
-- [Get Started](#get-started)
-
 ## 🔥 Features
 
 - Fine-tune GPT-Neo 1.3B with a small sample of **OpenWebText**
